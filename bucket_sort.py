@@ -55,7 +55,7 @@ def bucket_sort(numbers, num_buckets=10):
     sorted_list = []
 
     for i in range(len(numbers)):
-        bucket_list.append([]) # check that it adds 10
+        bucket_list.append([])
 
     for i in range(len(numbers)):
         bucket_list_index = int(numbers[i] * num_buckets / (max_value + 1))
