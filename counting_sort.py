@@ -3,8 +3,16 @@ import time
 def counting_sort(numbers):
     """Sort given numbers (integers) by counting occurrences of each number,
     then looping over counts and copying that many numbers into output list.
-    TODO: Running time: ??? Why and under what conditions?
-    TODO: Memory usage: ??? Why and under what conditions?"""
+    TODO: Running time: O(n + k) Why and under what conditions?
+        Must iterate through numbers first to find max value (O(n)). Then a
+        series of steps must be executed to find what value in the auxillary list 
+        will be changed. Then after that iterating through the aux list and 
+        adding the current index's value to the next index's value. Then using
+        those values to find where in the sorted array are the values in numbers
+        going (all k).
+    TODO: Memory usage: O(k) Why and under what conditions?
+        Must created an auxillary list (range(0, max value of numbers + 1)) 
+        to sort the list"""
     # TODO: Find range of given numbers (minimum and maximum integer values)
     # TODO: Create list of counts with a slot for each number in input range
     # TODO: Loop over given numbers and increment each number's count

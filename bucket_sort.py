@@ -29,8 +29,12 @@ def merge_sort(items):
 def bucket_sort(numbers, num_buckets=10):
     """Sort given numbers by distributing into buckets representing subranges,
     then sorting each bucket and concatenating all buckets in sorted order.
-    TODO: Running time: ??? Why and under what conditions?
-    TODO: Memory usage: ??? Why and under what conditions?"""
+    TODO: Running time: O(n + k) Why and under what conditions?
+        Must iterate through numbers first to find max value (O(n)). Then for 
+        each value is run through sort of a hash function to determine where in
+        the bucket list it will go (k)
+    TODO: Memory usage: O(n) Why and under what conditions?
+        A bucket must be created for each value in numbers"""
     # TODO: Find range of given numbers (minimum and maximum values)
     # TODO: Create list of buckets to store numbers in subranges of input range
     # TODO: Loop over given numbers and place each item in appropriate bucket
